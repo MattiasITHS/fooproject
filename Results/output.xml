@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.2 on win32)" generated="20210322 21:22:04.361" rpa="false">
+<suite id="s1" name="LabbWebTest &amp; VG test">
+<suite id="s1-s1" name="LabbWebTest" source="C:\Users\hovde\.jenkins\workspace\Labb_Mattias\Tests\LabbWebTest.robot">
+<test id="s1-s1-t1" name="Test That Cancel Button Redirects To The Date Selection Page">
+<kw name="Start Test" library="keywords" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210322 21:22:04.550" level="INFO">Opening browser 'headlesschrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210322 21:22:04.549" endtime="20210322 21:22:05.593"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20210322 21:22:05.594" level="INFO">Opening url 'http://rental21.infotiv.net/webpage/html/gui/index.php'</msg>
+<status status="PASS" starttime="20210322 21:22:05.593" endtime="20210322 21:22:07.626"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Infotiv Car Rental</arg>
+</arguments>
+<msg timestamp="20210322 21:22:07.637" level="INFO">Current page contains text 'Infotiv Car Rental'.</msg>
+<status status="PASS" starttime="20210322 21:22:07.627" endtime="20210322 21:22:07.638"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:04.549" endtime="20210322 21:22:07.638"></status>
+</kw>
+<kw name="Click on Create User Button" library="keywords">
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>id=createUser</arg>
+<arg>RETURN</arg>
+</arguments>
+<msg timestamp="20210322 21:22:07.638" level="INFO">Sending key(s) ('RETURN',) to id=createUser element.</msg>
+<msg timestamp="20210322 21:22:08.135" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20210322 21:22:08.135" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20210322 21:22:07.638" endtime="20210322 21:22:08.141"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Create user</arg>
+</arguments>
+<msg timestamp="20210322 21:22:08.154" level="INFO">Current page contains text 'Create user'.</msg>
+<status status="PASS" starttime="20210322 21:22:08.141" endtime="20210322 21:22:08.154"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:07.638" endtime="20210322 21:22:08.154"></status>
+</kw>
+<kw name="Click On Cancel Button" library="keywords">
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>id=cancel</arg>
+<arg>RETURN</arg>
+</arguments>
+<msg timestamp="20210322 21:22:08.154" level="INFO">Sending key(s) ('RETURN',) to id=cancel element.</msg>
+<msg timestamp="20210322 21:22:08.627" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20210322 21:22:08.628" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20210322 21:22:08.154" endtime="20210322 21:22:08.634"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:08.154" endtime="20210322 21:22:08.634"></status>
+</kw>
+<kw name="Date Selection Page Shows" library="keywords">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Infotiv Car Rental</arg>
+</arguments>
+<msg timestamp="20210322 21:22:08.641" level="INFO">Current page contains text 'Infotiv Car Rental'.</msg>
+<status status="PASS" starttime="20210322 21:22:08.634" endtime="20210322 21:22:08.642"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:08.634" endtime="20210322 21:22:08.642"></status>
+</kw>
+<kw name="End Web Test" library="keywords" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210322 21:22:08.642" endtime="20210322 21:22:10.687"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:08.642" endtime="20210322 21:22:10.688"></status>
+</kw>
+<doc>Test Cancel Button On Create User Page</doc>
+<tags>
+<tag>krav-Create User</tag>
+</tags>
+<status status="PASS" starttime="20210322 21:22:04.548" endtime="20210322 21:22:10.688" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="Test That I Get A Welcomephrase If Successfully Logged In">
+<kw name="Start Test" library="keywords" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210322 21:22:10.692" level="INFO">Opening browser 'headlesschrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210322 21:22:10.691" endtime="20210322 21:22:11.736"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20210322 21:22:11.736" level="INFO">Opening url 'http://rental21.infotiv.net/webpage/html/gui/index.php'</msg>
+<status status="PASS" starttime="20210322 21:22:11.736" endtime="20210322 21:22:12.052"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Infotiv Car Rental</arg>
+</arguments>
+<msg timestamp="20210322 21:22:12.064" level="INFO">Current page contains text 'Infotiv Car Rental'.</msg>
+<status status="PASS" starttime="20210322 21:22:12.052" endtime="20210322 21:22:12.064"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:10.690" endtime="20210322 21:22:12.064"></status>
+</kw>
+<kw name="Entered My Login Information" library="keywords">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>id=userInfoTop</arg>
+</arguments>
+<msg timestamp="20210322 21:22:12.072" level="INFO">Current page contains element 'id=userInfoTop'.</msg>
+<status status="PASS" starttime="20210322 21:22:12.064" endtime="20210322 21:22:12.072"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="email"]</arg>
+<arg>${EMAIL}</arg>
+</arguments>
+<msg timestamp="20210322 21:22:12.072" level="INFO">Typing text 'tester01@test.se' into text field 'xpath://*[@id="email"]'.</msg>
+<status status="PASS" starttime="20210322 21:22:12.072" endtime="20210322 21:22:12.137"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="password"]</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20210322 21:22:12.137" level="INFO">Typing password into text field 'xpath://*[@id="password"]'.</msg>
+<msg timestamp="20210322 21:22:12.171" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20210322 21:22:12.200" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20210322 21:22:12.137" endtime="20210322 21:22:12.200"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:12.064" endtime="20210322 21:22:12.200"></status>
+</kw>
+<kw name="Login On Website" library="keywords">
+<kw name="Click On Login Button" library="keywords">
+<kw name="Page Should Contain Button" library="SeleniumLibrary">
+<doc>Verifies button ``locator`` is found from current page.</doc>
+<arguments>
+<arg>id=login</arg>
+</arguments>
+<msg timestamp="20210322 21:22:12.227" level="INFO">Current page contains button 'id=login'.</msg>
+<status status="PASS" starttime="20210322 21:22:12.201" endtime="20210322 21:22:12.227"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>id=login</arg>
+<arg>RETURN</arg>
+</arguments>
+<msg timestamp="20210322 21:22:12.227" level="INFO">Sending key(s) ('RETURN',) to id=login element.</msg>
+<msg timestamp="20210322 21:22:12.982" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20210322 21:22:12.982" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20210322 21:22:12.227" endtime="20210322 21:22:12.985"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:12.201" endtime="20210322 21:22:12.985"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:12.200" endtime="20210322 21:22:12.985"></status>
+</kw>
+<kw name="I Get A Welcomephrase" library="keywords">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath://*[@id="welcomePhrase"]</arg>
+</arguments>
+<msg timestamp="20210322 21:22:12.994" level="INFO">Current page contains element 'xpath://*[@id="welcomePhrase"]'.</msg>
+<status status="PASS" starttime="20210322 21:22:12.985" endtime="20210322 21:22:12.994"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:12.985" endtime="20210322 21:22:12.995"></status>
+</kw>
+<kw name="Logout" library="keywords">
+<kw name="Page Should Contain Button" library="SeleniumLibrary">
+<doc>Verifies button ``locator`` is found from current page.</doc>
+<arguments>
+<arg>id=logout</arg>
+</arguments>
+<msg timestamp="20210322 21:22:13.015" level="INFO">Current page contains button 'id=logout'.</msg>
+<status status="PASS" starttime="20210322 21:22:12.995" endtime="20210322 21:22:13.015"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>id=logout</arg>
+<arg>RETURN</arg>
+</arguments>
+<msg timestamp="20210322 21:22:13.016" level="INFO">Sending key(s) ('RETURN',) to id=logout element.</msg>
+<msg timestamp="20210322 21:22:13.646" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20210322 21:22:13.646" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20210322 21:22:13.015" endtime="20210322 21:22:13.652"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:12.995" endtime="20210322 21:22:13.653"></status>
+</kw>
+<kw name="End Web Test" library="keywords" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210322 21:22:13.653" endtime="20210322 21:22:15.708"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:13.653" endtime="20210322 21:22:15.708"></status>
+</kw>
+<doc>Test Login And Get A Welcomephrase With Firstname On Header</doc>
+<tags>
+<tag>krav-Header</tag>
+</tags>
+<status status="PASS" starttime="20210322 21:22:10.689" endtime="20210322 21:22:15.708" critical="yes"></status>
+</test>
+<doc>Basic info about test suite</doc>
+<status status="PASS" starttime="20210322 21:22:04.381" endtime="20210322 21:22:15.709"></status>
+</suite>
+<suite id="s1-s2" name="VG test" source="C:\Users\hovde\.jenkins\workspace\Labb_Mattias\Tests\VG_test.robot">
+<test id="s1-s2-t1" name="Scenario: Test Of Book A Car">
+<kw name="Open Browser And Go To Infotiv" library="vg_keywords" type="setup">
+<kw name="I Have Open Chrome" library="vg_keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210322 21:22:15.721" level="INFO">Opening browser 'headlesschrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210322 21:22:15.721" endtime="20210322 21:22:16.733"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:15.720" endtime="20210322 21:22:16.733"></status>
+</kw>
+<kw name="I Have Entered The Webadress" library="vg_keywords">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20210322 21:22:16.733" level="INFO">Opening url 'http://rental21.infotiv.net'</msg>
+<status status="PASS" starttime="20210322 21:22:16.733" endtime="20210322 21:22:17.105"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:16.733" endtime="20210322 21:22:17.105"></status>
+</kw>
+<kw name="The Website Shows" library="vg_keywords">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Infotiv Car Rental</arg>
+</arguments>
+<msg timestamp="20210322 21:22:17.117" level="INFO">Current page contains text 'Infotiv Car Rental'.</msg>
+<status status="PASS" starttime="20210322 21:22:17.105" endtime="20210322 21:22:17.117"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:17.105" endtime="20210322 21:22:17.117"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:15.720" endtime="20210322 21:22:17.117"></status>
+</kw>
+<kw name="Given I Have Entered My Login Information" library="vg_keywords">
+<kw name="Enter Email And Password" library="vg_keywords">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="email"]</arg>
+<arg>${EMAIL}</arg>
+</arguments>
+<msg timestamp="20210322 21:22:17.118" level="INFO">Typing text 'tester01@test.se' into text field 'xpath://*[@id="email"]'.</msg>
+<status status="PASS" starttime="20210322 21:22:17.118" endtime="20210322 21:22:17.184"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="password"]</arg>
+<arg>${PASSWORD}</arg>
+</arguments>
+<msg timestamp="20210322 21:22:17.184" level="INFO">Typing password into text field 'xpath://*[@id="password"]'.</msg>
+<msg timestamp="20210322 21:22:17.216" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20210322 21:22:17.247" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20210322 21:22:17.184" endtime="20210322 21:22:17.247"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:17.118" endtime="20210322 21:22:17.247"></status>
+</kw>
+<kw name="Click On Login Button" library="vg_keywords">
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>id=login</arg>
+<arg>RETURN</arg>
+</arguments>
+<msg timestamp="20210322 21:22:17.248" level="INFO">Sending key(s) ('RETURN',) to id=login element.</msg>
+<msg timestamp="20210322 21:22:18.073" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20210322 21:22:18.073" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20210322 21:22:17.248" endtime="20210322 21:22:18.077"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:17.247" endtime="20210322 21:22:18.078"></status>
+</kw>
+<kw name="Page Should Contain A Welcome Phrase" library="vg_keywords">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>id=welcomePhrase</arg>
+</arguments>
+<msg timestamp="20210322 21:22:18.087" level="INFO">Current page contains element 'id=welcomePhrase'.</msg>
+<status status="PASS" starttime="20210322 21:22:18.078" endtime="20210322 21:22:18.087"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:18.078" endtime="20210322 21:22:18.087"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:17.117" endtime="20210322 21:22:18.087"></status>
+</kw>
+<kw name="When I Have Booked The Audi Q7" library="vg_keywords">
+<kw name="I Click Continue" library="vg_keywords">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Infotiv Car Rental</arg>
+</arguments>
+<msg timestamp="20210322 21:22:18.095" level="INFO">Current page contains text 'Infotiv Car Rental'.</msg>
+<status status="PASS" starttime="20210322 21:22:18.088" endtime="20210322 21:22:18.095"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>id=continue</arg>
+<arg>RETURN</arg>
+</arguments>
+<msg timestamp="20210322 21:22:18.095" level="INFO">Sending key(s) ('RETURN',) to id=continue element.</msg>
+<msg timestamp="20210322 21:22:18.869" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20210322 21:22:18.869" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20210322 21:22:18.095" endtime="20210322 21:22:18.874"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:18.087" endtime="20210322 21:22:18.874"></status>
+</kw>
+<kw name="Page Shows Available Cars" library="vg_keywords">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>id=carSelection</arg>
+</arguments>
+<msg timestamp="20210322 21:22:18.883" level="INFO">Current page contains element 'id=carSelection'.</msg>
+<status status="PASS" starttime="20210322 21:22:18.874" endtime="20210322 21:22:18.883"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:18.874" endtime="20210322 21:22:18.883"></status>
+</kw>
+<kw name="Audi Q7 Is Available" library="vg_keywords">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath://*[@id="carTable"]/tbody/tr[1]</arg>
+</arguments>
+<msg timestamp="20210322 21:22:18.893" level="INFO">Current page contains element 'xpath://*[@id="carTable"]/tbody/tr[1]'.</msg>
+<status status="PASS" starttime="20210322 21:22:18.883" endtime="20210322 21:22:18.893"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:18.883" endtime="20210322 21:22:18.893"></status>
+</kw>
+<kw name="I Click Book" library="vg_keywords">
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>id=bookQ7pass5</arg>
+<arg>RETURN</arg>
+</arguments>
+<msg timestamp="20210322 21:22:18.894" level="INFO">Sending key(s) ('RETURN',) to id=bookQ7pass5 element.</msg>
+<msg timestamp="20210322 21:22:19.387" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20210322 21:22:19.387" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20210322 21:22:18.894" endtime="20210322 21:22:19.589"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:18.893" endtime="20210322 21:22:19.589"></status>
+</kw>
+<kw name="Page Shows Confirm Booking Of Audi Q7" library="vg_keywords">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath://*[@id="confirmSelection"]/form</arg>
+</arguments>
+<msg timestamp="20210322 21:22:19.603" level="INFO">Current page contains element 'xpath://*[@id="confirmSelection"]/form'.</msg>
+<status status="PASS" starttime="20210322 21:22:19.590" endtime="20210322 21:22:19.603"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:19.590" endtime="20210322 21:22:19.603"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:18.087" endtime="20210322 21:22:19.603"></status>
+</kw>
+<kw name="And Enter My Credit Card Information" library="vg_keywords">
+<kw name="I Enter Card Information" library="vg_keywords">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath://*[@id="confirmSelection"]/form</arg>
+</arguments>
+<msg timestamp="20210322 21:22:19.610" level="INFO">Current page contains element 'xpath://*[@id="confirmSelection"]/form'.</msg>
+<status status="PASS" starttime="20210322 21:22:19.604" endtime="20210322 21:22:19.610"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=cardNum</arg>
+<arg>${CARD_NUMBER}</arg>
+</arguments>
+<msg timestamp="20210322 21:22:19.610" level="INFO">Typing text '1111111111111111' into text field 'id=cardNum'.</msg>
+<status status="PASS" starttime="20210322 21:22:19.610" endtime="20210322 21:22:19.676"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=fullName</arg>
+<arg>${CARD_NAME_HOLDER}</arg>
+</arguments>
+<msg timestamp="20210322 21:22:19.676" level="INFO">Typing text 'Testo' into text field 'id=fullName'.</msg>
+<status status="PASS" starttime="20210322 21:22:19.676" endtime="20210322 21:22:19.742"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=cvc</arg>
+<arg>${CARD_CVCID}</arg>
+</arguments>
+<msg timestamp="20210322 21:22:19.742" level="INFO">Typing text '987' into text field 'id=cvc'.</msg>
+<status status="PASS" starttime="20210322 21:22:19.742" endtime="20210322 21:22:19.803"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:19.603" endtime="20210322 21:22:19.803"></status>
+</kw>
+<kw name="I Click Confirm Booking" library="vg_keywords">
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>id=confirm</arg>
+<arg>RETURN</arg>
+</arguments>
+<msg timestamp="20210322 21:22:19.804" level="INFO">Sending key(s) ('RETURN',) to id=confirm element.</msg>
+<msg timestamp="20210322 21:22:20.322" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20210322 21:22:20.322" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20210322 21:22:19.804" endtime="20210322 21:22:20.327"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:19.803" endtime="20210322 21:22:20.328"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:19.603" endtime="20210322 21:22:20.328"></status>
+</kw>
+<kw name="Then Car Is Now Ready To Pickup" library="vg_keywords">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath://*[@id="confirmMessage"]/label</arg>
+</arguments>
+<msg timestamp="20210322 21:22:20.338" level="INFO">Current page contains element 'xpath://*[@id="confirmMessage"]/label'.</msg>
+<status status="PASS" starttime="20210322 21:22:20.328" endtime="20210322 21:22:20.338"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:20.328" endtime="20210322 21:22:20.338"></status>
+</kw>
+<kw name="Clear Booking And Logout And Close Webpage" library="vg_keywords" type="teardown">
+<kw name="Go To Mypage" library="vg_keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=title</arg>
+</arguments>
+<msg timestamp="20210322 21:22:20.339" level="INFO">Clicking element 'id=title'.</msg>
+<status status="PASS" starttime="20210322 21:22:20.338" endtime="20210322 21:22:20.594"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Infotiv Car Rental</arg>
+</arguments>
+<msg timestamp="20210322 21:22:20.607" level="INFO">Current page contains text 'Infotiv Car Rental'.</msg>
+<status status="PASS" starttime="20210322 21:22:20.594" endtime="20210322 21:22:20.607"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=mypage</arg>
+</arguments>
+<msg timestamp="20210322 21:22:20.608" level="INFO">Clicking element 'id=mypage'.</msg>
+<status status="PASS" starttime="20210322 21:22:20.607" endtime="20210322 21:22:20.846"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Mypage</arg>
+</arguments>
+<msg timestamp="20210322 21:22:20.857" level="INFO">Current page contains text 'Mypage'.</msg>
+<status status="PASS" starttime="20210322 21:22:20.846" endtime="20210322 21:22:20.857"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:20.338" endtime="20210322 21:22:20.857"></status>
+</kw>
+<kw name="Delete Booked Car" library="vg_keywords">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath://*[@id="middlepane"]/table/tbody/tr[2]</arg>
+</arguments>
+<msg timestamp="20210322 21:22:20.867" level="INFO">Current page contains element 'xpath://*[@id="middlepane"]/table/tbody/tr[2]'.</msg>
+<status status="PASS" starttime="20210322 21:22:20.857" endtime="20210322 21:22:20.867"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=unBook1</arg>
+</arguments>
+<msg timestamp="20210322 21:22:20.867" level="INFO">Clicking element 'id=unBook1'.</msg>
+<status status="PASS" starttime="20210322 21:22:20.867" endtime="20210322 21:22:20.899"></status>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<doc>Handles the current alert and returns its message.</doc>
+<arguments>
+<arg>action=ACCEPT</arg>
+</arguments>
+<msg timestamp="20210322 21:22:20.900" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20210322 21:22:20.899" endtime="20210322 21:22:20.902"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id=logout</arg>
+</arguments>
+<msg timestamp="20210322 21:22:20.902" level="INFO">Clicking element 'id=logout'.</msg>
+<status status="PASS" starttime="20210322 21:22:20.902" endtime="20210322 21:22:21.544"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:20.857" endtime="20210322 21:22:21.545"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210322 21:22:21.545" endtime="20210322 21:22:23.607"></status>
+</kw>
+<status status="PASS" starttime="20210322 21:22:20.338" endtime="20210322 21:22:23.608"></status>
+</kw>
+<doc>Test The Navigation Flow Of Booking A Car</doc>
+<tags>
+<tag>krav-Book Car</tag>
+</tags>
+<status status="PASS" starttime="20210322 21:22:15.720" endtime="20210322 21:22:23.608" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210322 21:22:15.711" endtime="20210322 21:22:23.611"></status>
+</suite>
+<status status="PASS" starttime="20210322 21:22:04.363" endtime="20210322 21:22:23.616"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0">Critical Tests</stat>
+<stat pass="3" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">krav-Book Car</stat>
+<stat pass="1" fail="0">krav-Create User</stat>
+<stat pass="1" fail="0">krav-Header</stat>
+</tag>
+<suite>
+<stat pass="3" fail="0" id="s1" name="LabbWebTest &amp; VG test">LabbWebTest &amp; VG test</stat>
+<stat pass="2" fail="0" id="s1-s1" name="LabbWebTest">LabbWebTest &amp; VG test.LabbWebTest</stat>
+<stat pass="1" fail="0" id="s1-s2" name="VG test">LabbWebTest &amp; VG test.VG test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
