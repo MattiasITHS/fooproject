@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Labb1Test" time="0.033" tests="10" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Labb1Test" time="0.031" tests="10" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="SE"/>
     <property name="sun.boot.library.path" value="C:\Users\hovde\.jdks\openjdk-15.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\hovde\AppData\Local\Temp\surefire8909639543591778081\surefirebooter2357551268213806117.jar C:\Users\hovde\AppData\Local\Temp\surefire8909639543591778081 2021-03-23T15-28-09_745-jvmRun1 surefire3690638030200528582tmp surefire_02859019406239437705tmp"/>
+    <property name="sun.java.command" value="C:\Users\hovde\AppData\Local\Temp\surefire3941960092544200284\surefirebooter16332053524791385591.jar C:\Users\hovde\AppData\Local\Temp\surefire3941960092544200284 2021-03-24T15-11-31_186-jvmRun1 surefire9002762195344106558tmp surefire_07148611025284484286tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\hovde\IdeaProjects\fooproject\target\test-classes;C:\Users\hovde\IdeaProjects\fooproject\target\classes;C:\Users\hovde\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\hovde\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\hovde\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\hovde\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\hovde\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\hovde\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\hovde\AppData\Local\Temp\surefire8909639543591778081\surefirebooter2357551268213806117.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\hovde\AppData\Local\Temp\surefire3941960092544200284\surefirebooter16332053524791385591.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="15.0.2+7-27"/>
@@ -56,14 +56,14 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="testAddSalaryToAnEmployee" classname="Labb1Test" time="0.022"/>
+  <testcase name="testAddSalaryToAnEmployee" classname="Labb1Test" time="0.02"/>
   <testcase name="testAddAgeToAnEmployee" classname="Labb1Test" time="0"/>
   <testcase name="testIncreaseSalaryNotLowerThanZero" classname="Labb1Test" time="0"/>
-  <testcase name="testIncreaseSalaryToOneEmployeeNotMoreThanOneHundredPercent" classname="Labb1Test" time="0"/>
-  <testcase name="testNotGreaterThanOneHundredPercent" classname="Labb1Test" time="0"/>
-  <testcase name="testIncreaseSalaryToOneEmployee" classname="Labb1Test" time="0.001"/>
+  <testcase name="testIncreaseSalaryToOneEmployeeNotMoreThanOneHundredPercent" classname="Labb1Test" time="0.001"/>
+  <testcase name="testNotGreaterThanOneHundredPercent" classname="Labb1Test" time="0.001"/>
+  <testcase name="testIncreaseSalaryToOneEmployee" classname="Labb1Test" time="0"/>
   <testcase name="testIncreaseSalaryToOneEmployeeNotLowerThanZero" classname="Labb1Test" time="0"/>
   <testcase name="testEmployeeFirstAndLastName" classname="Labb1Test" time="0.001"/>
-  <testcase name="testIncreaseAllSalaryToAllEmployees" classname="Labb1Test" time="0"/>
-  <testcase name="testAddCompanyIdAndRemoveEmployee" classname="Labb1Test" time="0.001"/>
+  <testcase name="testIncreaseAllSalaryToAllEmployees" classname="Labb1Test" time="0.001"/>
+  <testcase name="testAddCompanyIdAndRemoveEmployee" classname="Labb1Test" time="0"/>
 </testsuite>
